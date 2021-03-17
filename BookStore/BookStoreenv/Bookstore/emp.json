@@ -1,0 +1,32 @@
+[
+{
+    "model": "home.employee",
+    "pk": 1,
+    "fields": {
+        "name": "Naveen",
+        "profile": "developer",
+        "description": "good employee",
+        "salary": 40000.0
+    }
+},
+{
+    "model": "home.employee",
+    "pk": 2,
+    "fields": {
+        "name": "saikiran",
+        "profile": "software engineer",
+        "description": "worked in tcs company",
+        "salary": 25000.0
+    }
+},
+{
+    "model": "home.employee",
+    "pk": 3,
+    "fields": {
+        "name": "rupesh",
+        "profile": "bpo",
+        "description": "he is very innocent and talktative",
+        "salary": 20000.0
+    }
+}
+]
