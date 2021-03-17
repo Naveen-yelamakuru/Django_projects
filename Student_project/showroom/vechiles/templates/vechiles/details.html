@@ -1,0 +1,17 @@
+{% extends 'vechiles/base.html' %}
+{% block body %}
+
+<h2>
+{{object.vechile_name}}
+</h2>
+<h2>
+{{ object.vechile_series}}
+</h2>
+<h4>
+{{ object.vechile_price}}
+</h4>
+<h5>
+{{object.vechile_description}}
+</h5>
+<a href='{ % url "vechiles:delete" vechile.vechile_id %}'>delete</a>
+{% endblock %}

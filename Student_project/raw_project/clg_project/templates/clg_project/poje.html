@@ -1,0 +1,42 @@
+
+{% extends 'clg_project/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+{% block body %}
+{% for project in project_list%}
+   <div class="row">
+       <div class="col-md-3 offset-md-2">
+           <img class='card' height='150px' src="{{project.project_image}}""
+
+
+       </div>
+       <div class="col-md-4">
+           <h2> {{project.project_price}}</h2>
+
+       </div>
+       <div class="col-md-2">
+           <a href="" class="btn btn-success"> Details </a>
+
+       </div>
+   </div>
+
+
+
+
+
+{%endfor%}
+{% endblock %}
+<ul>
+    <li>
+       <a href="/clg_project/{{project.project_price}}">{{project.project_price}}</a>
+    </li>
+</ul>
+</body>
+</html>

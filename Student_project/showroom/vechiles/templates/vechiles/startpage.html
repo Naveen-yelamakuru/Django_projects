@@ -1,0 +1,65 @@
+{% extends 'vechiles/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    {% block body%}
+
+    {% for item in vechile %}
+    <div class='row'>
+        <div class="col-md-3 ">
+            <img class="card" height="170px" src="{{item.vechile_image}}">
+        </div>
+        
+        <div class='col-md-3'>
+            <h2>
+               Name: {{item.vechile_name}}
+                </h2>
+                <h2>
+                Model:{{ item.vechile_series}}
+                </h2>
+                <h4>
+                Price:{{item.vechile_price}}
+                </h4>
+                <h5>
+               description: {{item.vechile_description}}
+                </h5>
+                <div class='col-md-4 offset-md-2' > <a href="{% url 'vechiles:details' item.id %}" class='button'>Details</a></div>
+        </div>
+        <div class="col-md-3 ">
+            <img class="card" height="170px" src="{{item.vechile_image}}">
+        </div>
+        <div class='col-md-3'>
+            <h2>
+               Name: {{item.vechile_name}}
+                </h2>
+                <h2>
+                Model:{{ item.vechile_series}}
+                </h2>
+                <h4>
+                Price:{{item.vechile_price}}
+                </h4>
+                <h5>
+               description: {{item.vechile_description}}
+                </h5>
+                <div class='col-md-3 offset-md-2' > <a href="{% url 'vechiles:details' item.id %}" class='button'>Details</a></div>
+        </div>
+        
+    </div>
+        
+    {% endfor %}
+{% endblock %}
+</body>
+</html>
+<ul>
+    <li>
+         <!-- remove harded codeded urls using name of urls "/vechiles/{{item.id}}"-->
+       <a href="{% url 'vechiles:details' item.id %}">{{item.id}}--{{item.vechile_name}} </a>
+    </li>
+    
+</ul>
