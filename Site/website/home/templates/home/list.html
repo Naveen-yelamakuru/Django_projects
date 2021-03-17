@@ -1,0 +1,9 @@
+{% for obj in data %}
+{{ obj.name}}
+{%endfor%}
+
+{%if messages %}
+    {% for message in messages%}
+        {{message}}
+    {%endfor%}
+{%endif%}
