@@ -1,0 +1,11 @@
+.image{
+    height:300px;
+    width: 350px;
+}
+.data{
+    text-align:left;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+
+}
